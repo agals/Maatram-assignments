@@ -1,0 +1,14 @@
+class Student:
+    def __init__(self,name,dob,maritalstatus,city):
+        self.name=name
+        self.dob=dob
+        self.maritalstatus=maritalstatus
+        self.city=city
+    def address(self):
+        addr=f"Name:{self.name}\nDOB:{self.dob}\nMarital status:{self.maritalstatus}\nCity:{self.city}"
+        return addr
+stu1=Student('AGALYA',2003,'single',"Chennai")
+stu2=Student('MARY',2002,'single',"Trichy")
+
+print(stu1.address())
+print(stu2.address())
