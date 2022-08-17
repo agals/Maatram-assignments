@@ -1,0 +1,19 @@
+class Student:
+    fees= 50000
+    def __init__(self,name,city,dob):
+        self.name = name
+        self.city = city
+        self.dob = dob
+    
+e1 = Student("Agalya","Chennai",2003)
+e2 = Student("Mary","Trichy",2002)
+print(e1.fees)
+print(e2.fees)
+
+Student.fees = 30000
+print(e1.fees)
+print(e2.fees)
+
+e2.salary = 40000
+print(e1.fees)
+print(e2.fees)
