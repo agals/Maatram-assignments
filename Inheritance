@@ -1,0 +1,24 @@
+#INHERITANCE
+
+class Student:
+    fees=10000
+    
+    def __init__(self,name,dob,gender,city):
+        self.name=name
+        self.dob=dob
+        self.gender=gender
+        self.city=city
+        
+class Mechanical(Student):
+    fees=12000
+    def __init__(self,name,dob,gender,city,year):
+        super().__init__(name,dob,gender,city)
+        self.year=year
+           
+stu1=Mechanical('Agalya',2003,'Female',"Chennai",2020)
+stu2=Mechanical('Aravindh',2005,'Male',"Thanjavur",2022)
+
+print(stu1.fees)
+print(stu2.year)
+print(stu1.gender)
+     
