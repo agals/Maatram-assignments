@@ -1,0 +1,24 @@
+class Employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+    def __add__(self,other):
+        return self.salary+other.salary
+    def __eq__(self,other):
+        return self.name==other.name
+    def __len__(self):
+        return len(self.name)
+    def __getitem__(self,key):
+        return self.name[key]
+    def __contains__(self,value):
+        if value in self.name:
+            return True
+        return False
+emp1=Employee('abcdefg',12000)
+emp2=Employee('hijklmn',15000)
+
+print(emp1+emp2)
+print(emp1==emp2)
+print(len(emp1))
+print(emp2 [1])
+print('g' in emp1)
