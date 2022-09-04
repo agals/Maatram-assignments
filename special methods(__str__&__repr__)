@@ -1,0 +1,19 @@
+from datetime import date
+
+class Student:
+    def __init__(self,name):
+        self.name=name
+        self.age=18
+    
+    def __str__(self):
+        return f'{self.name}'
+   
+    def __repr__(self):
+        return f' Student({self.name})'
+        
+stu1=Student('John')
+print([stu1],stu1)
+
+d=date(year=2022,month=5,day=5)
+print(d)
+    
