@@ -1,0 +1,15 @@
+Given an array of integers,return a new array such that each element at 
+index 'i' of the new array is the product of all the numbers in the original array except the one at 'i'
+CODE:
+s=list(map(int,input().split()))
+a=[]
+for i in s:
+    temp=1 
+    for j in s:
+        if j==i:
+            continue
+        else:
+            temp*=j 
+    a.append(temp)
+print(a)
+    
