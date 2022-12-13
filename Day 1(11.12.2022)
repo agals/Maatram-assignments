@@ -1,0 +1,10 @@
+Given a list of numbers and a number 'k',return whether any two numbers from the list add upto 'k'.
+code:
+
+n=list(map(int,input().split()))
+k=int(input())
+for i in n:
+    for j in n:
+        c=i+j 
+    if c==k:
+        print("True")
