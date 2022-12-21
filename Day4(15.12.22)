@@ -1,0 +1,7 @@
+Thousands Seperator
+CODE:
+
+def format_number(a):
+    print('{:,}'.format(a))
+n=int(input())
+format_number(n)
