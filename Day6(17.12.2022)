@@ -1,0 +1,12 @@
+Write a function that tekes a positive integer and calculates how many dots exist in a pentagonal shape around the center dot on the nth iteration
+CODE:
+
+a=int(input())
+sum=1 
+if(a==1):
+    print(1)
+else:
+    for i in range(1,a):
+        dot=i*5
+        sum=sum+dot
+    print(sum)
